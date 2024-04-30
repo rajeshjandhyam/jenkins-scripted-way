@@ -34,7 +34,7 @@ stage('Deploy to tomcat')
 deploy adapters: [tomcat9(credentialsId: '26e76d20-d22d-435c-8dea-6980e74a7dd0', path: '', url: 'http://100.26.221.4:9090/')], contextPath: null, onFailure: false, war: '**/java-web-app.war'
 }
 
-stage(Emial Notification)
+stage('Email Notification')
 {
 emailext body: '''Sucessfully completed the pipeline process.
 
