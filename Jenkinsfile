@@ -1,4 +1,4 @@
-node
+node('JNodes')
 {
 def mavenHome = tool name: "Maven Tool"
 
